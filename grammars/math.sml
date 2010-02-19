@@ -1,3 +1,4 @@
+(* Math grammar: Matches valid mathematical expressions. *)
 val grammar = Grammar[
     >> ("start", [[S "exp"],
                   [S "exp", T "=", S "exp"]]),

@@ -1,6 +1,8 @@
+(* Haiku grammar: Matches haikus. *)
 val grammar = Grammar[
     >> ("start", [[S "5 sentence", T "\n", S "7 sentence", T "\n", S "5 sentence"]]),
 
+    (* "<n> sentence" symbols = sentences containing <n> syllables. *)
     >> ("7 sentence", [[S "1 word", T " ", S "6 sentence"],
                        [S "2 word", T " ", S "5 sentence"],
                        [S "3 word", T " ", S "4 sentence"],
@@ -36,6 +38,7 @@ val grammar = Grammar[
 
     >> ("1 sentence", [[S "1 word"]]),
 
+    (* "<n> word" symbols = words containing <n> syllables. *)
     >> ("7 word", [[T "chokoladebanditten"],
                    [T "slikautomatsopfyldning"]
                    ]),

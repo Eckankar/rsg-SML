@@ -1,3 +1,4 @@
+(* Dialog grammar: A grammar describing a silly dialog. *)
 val grammar = Grammar[
     >> ("start", [[S "dialog", T "\n\n", S "conclusion"],
                   [S "dialog", T "\n", S "canned laughter"]]),
