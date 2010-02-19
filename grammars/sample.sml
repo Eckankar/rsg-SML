@@ -7,7 +7,9 @@ val grammar = Grammar [
 
     (* A number is either 0 or S(n), where n is another number. *)
     >> ("number", [[T "0"],
-                   [T "S(", S "number", T ")"]]),
+                   [T "S(", S "number", T ")"],
+                   [T "S(", S "number", T ")"],
+                   [T "S(", S "number", T ")"]])
 
 ];
 
