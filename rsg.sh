@@ -1,3 +1,3 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
-echo "$1\n" | mosml -P full -quietdec rsg.sml
+echo "$1\n" | ~/build/mosml201/bin/mosml -P full -quietdec rsg.sml

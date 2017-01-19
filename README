@@ -3,7 +3,6 @@
 ############################################
 
 In order to use this, you'll need:
-    - zsh
     - Moscow ML
 
 Other SML interpreters might work, but that hasn't been tested.
