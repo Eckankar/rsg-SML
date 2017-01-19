@@ -50,7 +50,7 @@ fun rsg (Grammar g) =
     end;
 
 local
-    val input = TextIO.inputLine TextIO.stdIn;
+    val SOME input = TextIO.inputLine TextIO.stdIn;
 in
     (* Trim off trailing \n *)
     val filename = String.extract (input, 0, SOME (size input - 1))

@@ -3,7 +3,7 @@
 ############################################
 
 In order to use this, you'll need:
-    - Moscow ML
+    - Moscow ML 2.10+
 
 Other SML interpreters might work, but that hasn't been tested.
 
